@@ -1,0 +1,26 @@
+docker images --> elenco delle immagini scaricate
+
+docker pull <image_name>:<image_version>
+::docker pull postgres:11-alpine
+
+docker image rm <image_name>
+
+docker volume create pg11_data
+docker run -d -v pg11_data:/var/lib/postgresql/data -p 5432:5432 --name pg11 postgres:11-alpine
+
+docker image ls
+docker volume ls
+docker ps
+docker ps -a
+
+docker stop pg11
+docker start pg11
+
+docker cp F:\pg_advanced\data\sales_records_100.csv pg96:/tmp/sales.csv
+docker cp F:\pg_advanced\data\sales_records_1500000.csv pg96:/tmp/sales_full.csv
+docker exec -it pg11 /bin/sh
+su - postgres
+
+psql
+
+psql -h 172.17.0.1 -U postgres -d postgres -p 6432
