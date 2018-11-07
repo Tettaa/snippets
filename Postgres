@@ -1,0 +1,3 @@
+
+#Get size of db
+SELECT pg_size_pretty(pg_database_size('somedatabase')) As fulldbsize;
