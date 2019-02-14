@@ -1,0 +1,14 @@
+#Comandi spot
+
+#crea nuovo branch
+git checkout -b feature/f1
+
+#stasha le modifiche
+git stash save "salvo modifiche"
+
+#recupera l'ultima modifiche
+git stash pop
+
+#poppa uno stash
+git stash pop stash@{1}
+
