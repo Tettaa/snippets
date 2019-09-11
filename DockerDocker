@@ -1,0 +1,5 @@
+docker run --rm  --name mynode -v C:/hostMachineDir/:/home/container_dir nodejs:v1 gulp
+
+run images nodejs:v1
+mount hostdir hostMachineDir to container dir /home/container_dir
+and with --rm remove the container when it exits
